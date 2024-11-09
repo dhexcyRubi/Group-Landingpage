@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CafeBites</title>
+
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+    
+    <a href="#" class="logo">
+        <img src="images/logo.png"  alt="Logo" width="40" height="40" class="logo-img" onclick="window.location.href='#'"> <!-- Add your logo image here -->
+        CafeBites<span>.</span>
+      </a>
+
+    <div id="menu-bar" class="fas fa-bars" style="background-color: #002944;"></div>
+
+    <nav class="navbar" style="background-color: #002944;">
+        <a href="#home">home</a>
+        <a href="#features">about us</a>
+        <a href="#about">owner info</a>
+       
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3></h3>
+       
+  
+        <p></p>
+        <a href="#"><img src="images/logo.png" alt=""></a>
+        
+    </div>
+
+    
+
+</section>
+
+<!-- home section ends -->
+
+<!-- features section starts  -->
+
+<section class="features" id="features">
+
+    <h1 class="heading">CATEGORIES</h1>
+
+    <div class="box-container">
+
+        <div class="box" onclick="window.location.href = 'https://cristine8.github.io/cristinepalcoto-BSCS-3B/'">
+            <i class=""></i>
+            <h3>DREYAUD CAFE</h3>
+            <p>Every visit to Snack Bites & DREYAUD CAFE is a delightful culinary adventure! Our café is intended for people who value the ideal fusion of a welcoming setting, superb coffee, and delectable small meals. Every sip at SnackBites &  DREYAUD CAFE</p>
+            <a href="#"><img src="images/poster.tin.png" alt=""></a>
+        </div>
+        
+        <div class="box" onclick="window.location.href='https://dhexcyrubi.github.io/dhexcyrubi-BSCS-3B/'">
+            <i class=""></i>
+            <h3>LESLIES BITES</h3>
+            <p>Snack & Sip Café is the ideal location for relaxing and indulging, whether you're stopping by for a quick snack or spending a relaxed afternoon. Come have a tasting experience that will tantalize your senses and make you want more!</p>
+
+            <a href="#"><img src="images/1dhex.poster.jpg" alt=""></a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- features section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"></h1>
+
+<div class="row">
+        
+    <div class="image">
+        <img src="1" alt="">
+    </div>    
+
+    <div class="box">
+        <h3></h3>
+        <p></p>
+        <div class="buttons">
+            <a href="#"><img src="images/" alt=""></a>
+            <a href="#"><img src="images/.png" alt=""></a>
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+
+<section class="review" id="review">
+
+    <h1 class="heading">owners info</h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="images/pic.1.jpg" alt="">
+            <h3>Palcoto,Cristine</h3>
+            <p>DRAYEUDCAFE email: cristinepalcoto@gmail.com</p>
+            <p>DRAYEUDCAFE #:09515205895</p>
+        </div>
+       
+        <div class="box">
+            <img src="images/1 (1).jpg" alt="">
+            <h3>Rubi,Dhexcy Grace</h3>
+            <p>SNACKBITES email: rubidhexcygrace18@gmail.com </p>
+            <p>SNACKBITES #: 09066086196</p>
+            
+        </div>
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+    </div>
+
+    <h1 class="credit"> created by <span> rubi & palcoto </span> | all rights reserved! </h1>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- script part  -->
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+
+var swiper = new Swiper(".image-slider", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2,
+        slideShadows: true,
+    },
+    loop:true,
+    autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+    },
+});    
+
+let menu = document.querySelector('#menu-bar');
+let navbar = document.querySelector('.navbar');
+
+menu.addEventListener('click', () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('nav-toggle');
+});
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('nav-toggle');
+}
+
+</script>
+
+
+</body>
+</html>
